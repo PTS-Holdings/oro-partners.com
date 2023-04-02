@@ -4,7 +4,7 @@ import Button from "../Button";
 function HeroSection() {
     return (
         <div className="container flex flex-col justify-between lg:flex-row ">
-            <div className="mb-4 w-full text-center lg:w-2/3  lg:text-left">
+            <div className="mb-4 w-full text-center lg:w-2/3  lg:text-left lg:pb-8">
                 <h1 className="header3 md:header1 mb-4 font-extrabold">
                     BUILDING UP FOR SUSTAINABLE{" "}
                     <span className="text-custom-orange-basic">GROWTH</span>
@@ -22,11 +22,9 @@ function HeroSection() {
             <div className="self-end">
                 <Image
                     src={"/assets/hero-img.svg"}
-                    width={478}
-                    height={373}
+                    width={433}
+                    height={338}
                     alt="hero-image"
-                    unoptimized={true}
-                    fixed
                 />
             </div>
         </div>
