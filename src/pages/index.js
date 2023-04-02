@@ -1,9 +1,7 @@
 import HeroSection from "@/components/homepage/HeroSection";
+import InsightsSection from "@/components/homepage/InsightsSection";
 import SubHeroSection from "@/components/homepage/SubHeroSection";
-import styles from "@/styles/Home.module.css";
-import { Inter } from "next/font/google";
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -19,6 +17,7 @@ export default function Home() {
 
 			<HeroSection />
 			<SubHeroSection />
+			<InsightsSection />
 		</>
 	);
 }
