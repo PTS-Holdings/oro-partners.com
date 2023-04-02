@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    @apply font-raleway text-custom-black scroll-smooth
+}
+}
+
+@layer components {
+  .header1{
+    @apply text-[56px] font-extrabold tracking-[1px] leading-[72px]
+  }
+  .header2{
+    @apply text-[42px] font-bold tracking-[0.5px] leading-[56px]
+  }
+  .header3{
+    @apply text-[32px] font-bold tracking-[0px] leading-[40px]
+  }
+  .header4{
+    @apply text-[24px] font-bold tracking-[0px] leading-[36px]
+  }
+  .body-large-bold{
+    @apply text-[20px] font-bold tracking-[0px] leading-[32px]
+  }
+  .body-large-regular{
+    @apply text-[20px] font-normal tracking-[0px] leading-[32px]
+  }
+  .body-medium-bold{
+    @apply text-[16px] font-bold tracking-[0px] leading-[24px]
+  }
+  .body-medium-regular{
+    @apply text-[16px] font-normal tracking-[0px] leading-[24px]
+  }
+  .body-small-bold{
+    @apply text-[14px] font-bold tracking-[0px] leading-[20px]
+  }
+  .body-small-regular{
+    @apply text-[14px] font-normal tracking-[0px] leading-[20px]
+  }
+  .caption-bold{
+    @apply text-[12px] font-bold tracking-[0.2px] leading-[16px]
+  }
+  .caption-medium{
+    @apply text-[12px] font-medium tracking-[0.2px] leading-[16px]
+  }
+  .caption-regular{
+    @apply text-[12px] font-normal tracking-[0.2px] leading-[16px]
+  }
+}
