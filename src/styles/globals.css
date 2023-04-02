@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply font-raleway text-custom-black scroll-smooth
+    @apply font-raleway text-custom-black scroll-smooth bg-custom-offWhite
 }
 }
 
