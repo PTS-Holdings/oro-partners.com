@@ -3,5 +3,6 @@
     "tabWidth": 4,
     "useTabs": true,
     "semi": true,
-    "proseWrap":"always"
+    "proseWrap":"always",
+    "plugins": ["prettier-plugin-tailwindcss"]
 }
