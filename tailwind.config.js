@@ -9,7 +9,6 @@ module.exports = {
 					DEFAULT: "1rem",
 					sm: "16px",
 					md: "80px",
-					lg: "120px",
 				},
 			},
 			colors: {
@@ -20,6 +19,7 @@ module.exports = {
 					},
 					black: "#121212",
 					offWhite: "#FDF9F6",
+					gray: "#9F9F9F",
 				},
 			},
 
