@@ -1,7 +1,7 @@
 function InsightsSection() {
     return (
         <div className="bg-custom-black">
-            <div className="container flex flex-col justify-between lg:flex-row py-6 gap-12">
+            <div className="container flex flex-col justify-between items-center lg:flex-row py-6 gap-12">
                 <div className="text-center max-w-[250px]">
 
                     <span className="text-custom-orange-basic header3 mb-4">+50</span>
