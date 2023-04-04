@@ -1,5 +1,6 @@
 import HeroSection from "@/components/homepage/HeroSection";
 import InsightsSection from "@/components/homepage/InsightsSection";
+import OfferingSection from "@/components/homepage/OfferingSection";
 import SubHeroSection from "@/components/homepage/SubHeroSection";
 import Head from "next/head";
 
@@ -18,6 +19,7 @@ export default function Home() {
 			<HeroSection />
 			<SubHeroSection />
 			<InsightsSection />
+			<OfferingSection />
 		</>
 	);
 }
