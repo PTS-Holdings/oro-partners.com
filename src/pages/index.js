@@ -1,3 +1,4 @@
+import CTABottomSection from "@/components/homepage/CTABottomSection";
 import HeroSection from "@/components/homepage/HeroSection";
 import InsightsSection from "@/components/homepage/InsightsSection";
 import OfferingSection from "@/components/homepage/OfferingSection";
@@ -20,6 +21,7 @@ export default function Home() {
 			<SubHeroSection />
 			<InsightsSection />
 			<OfferingSection />
+			<CTABottomSection />
 		</>
 	);
 }
