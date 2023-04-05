@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../Button";
 
 function HeroSection() {
     return (
-        <div className="container flex flex-col justify-between lg:flex-row ">
-            <div className="mb-4 w-full text-center lg:w-2/3  lg:text-left lg:pb-8">
+        <div className="container flex flex-col justify-between lg:flex-row">
+            <div className="mb-10 w-full text-center lg:w-2/3  lg:text-left lg:pb-8 flex flex-col items-center lg:items-start">
                 <h1 className="header3 md:header1 mb-4 font-extrabold lg:w-3/4">
                     BUILDING UP FOR SUSTAINABLE{" "}
                     <span className="text-custom-orange-basic">GROWTH</span>
@@ -16,7 +17,11 @@ function HeroSection() {
                     operations - growth plans
                 </p>
 
-                <Button>Get in Touch</Button>
+                <div>
+                    <Link href={"/contact"}>
+                        <Button>Get in Touch</Button>
+                    </Link>
+                </div>
             </div>
 
             <div className="self-end">
@@ -28,7 +33,7 @@ function HeroSection() {
                     priority
                 />
             </div>
-        </div>
+        </div >
     );
 }
 
