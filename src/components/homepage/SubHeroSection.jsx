@@ -1,7 +1,7 @@
 function SubHeroSection() {
     return (
         <div className="bg-[url('/assets/sub-hero-bg.png')]  bg-cover ">
-            <div className="container text-center space-y-5 py-9 w-2/3">
+            <div className="container text-center space-y-5 py-9 md:w-2/3">
                 <h2 className="header4 md:header2 text-white text-bold">
                     Empowering Our <span className="text-custom-orange-basic">People</span>
                 </h2>
