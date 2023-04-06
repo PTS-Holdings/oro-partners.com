@@ -1,4 +1,5 @@
 import AboutSection from "@/components/aboutPage/AboutSection";
+import TeamSection from "@/components/aboutPage/TeamSection";
 import Head from "next/head";
 
 export default function AboutUs() {
@@ -9,6 +10,7 @@ export default function AboutUs() {
 			</Head>
 
 			<AboutSection />
+			<TeamSection />
 		</>
 	);
 }
