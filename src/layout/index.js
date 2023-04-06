@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/footer";
 import { Fragment } from "react";
 
 export default function Layout({ children }) {
@@ -6,6 +7,7 @@ export default function Layout({ children }) {
 		<Fragment>
 			<Navbar className="sticky" />
 			<main>{children}</main>
+			<Footer />
 		</Fragment>
 	);
 }
