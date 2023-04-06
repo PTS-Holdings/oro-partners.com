@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function AboutSection() {
     return (
-        <div className="flex flex-col items-center justify-between  gap-6 pb-6 text-center md:gap-11 lg:flex-row lg:text-left container">
-            <div className="lg:w-2/3">
+        <div className="flex flex-col items-center justify-between  gap-6 pb-24 text-center md:gap-11 lg:flex-row lg:text-left container">
+            <div className="lg:w-1/2">
                 <h2 className=" md:header2 body-large-bold mb-4">
                     About <span className="text-custom-orange-basic">us</span>
                 </h2>
