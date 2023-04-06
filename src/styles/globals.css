@@ -6,6 +6,14 @@
   html {
     @apply font-raleway text-custom-black scroll-smooth bg-custom-offWhite
   }
+
+  label{
+    @apply md:body-medium-bold body-small-bold uppercase block
+  }
+
+  input, textarea{
+    @apply md:body-medium-regular bg-custom-offWhite body-small-regular border-b-2 py-4 border-[#9F9F9F] focus:outline-none focus:border-custom-orange-light placeholder:text-[#D2D2D2] w-full
+  }
 }
 
 @layer components {
