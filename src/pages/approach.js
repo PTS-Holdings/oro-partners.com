@@ -1,3 +1,4 @@
+import ApproachSection from "@/components/approchPage/ApproachSection";
 import HeroSection from "@/components/approchPage/HeroSection";
 import Head from "next/head";
 
@@ -9,6 +10,7 @@ export default function Approach() {
 			</Head>
 
 			<HeroSection />
+			<ApproachSection />
 		</div>
 	);
 }
