@@ -7,7 +7,7 @@ export default function AboutSection() {
                 <h2 className=" md:header2 body-large-bold mb-4">
                     About <span className="text-custom-orange-basic">us</span>
                 </h2>
-                <p>
+                <p className="md:body-medium-regular body-small-regular">
                     ORO Partners is an angel investment network connect and
                     support business angels, early stage investors,
                     entrepreneurs and corporates seeking investing opportunities
