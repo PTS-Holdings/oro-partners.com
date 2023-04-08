@@ -1,4 +1,7 @@
+import Button from "@/components/Button";
+import Head from "next/head";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function Contact() {
 	let [name, setName] = useState("");
@@ -6,8 +9,56 @@ export default function Contact() {
 	let [message, setMessage] = useState("");
 	let [company, setCompany] = useState("");
 
+	const submitHandler = async (e) => {
+		e.preventDefault();
+		console.log(name, email, message, company);
+
+		const payload = {
+			from: `${name} <${email}>`,
+			replyTo: `${email}`,
+			sender: `${email}`,
+			subject: `website contact form submission from ${name}`,
+			html: `<h1>New Inquiry from ${name}</h1>
+	        <h4>new contact form submission(oro-partners.com)</h4><br>
+	          <p><strong>name: </strong> ${name}</p>
+	          <p><strong>Email: </strong> ${email}</p><br>
+	          <p><strong>Company: </strong> ${company}</p><br>
+	          <p><strong>Message: </strong> ${message}</p><br>
+	        `,
+		};
+
+		const sendMail = new Promise(async function (resolve, reject) {
+			let res = await fetch("/api/emailHandler", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(payload),
+			});
+			if (res.status === 200) {
+				setName("");
+				setEmail("");
+				setMessage("");
+				setCompany("");
+				resolve();
+			} else {
+				reject();
+			}
+		});
+
+		await toast.promise(sendMail, {
+			pending: "Sending mail...",
+			success: "Email Sent, Wait for a reply soon.",
+			error: "Something went wong, try contacting us at: info@oro-partner.com",
+		});
+	};
+
 	return (
 		<div className="container flex flex-col items-center justify-between  gap-16 md:flex-row ">
+			<Head>
+				<title>Contact Us - ORO Partners</title>
+			</Head>
+
 			<div className="w-2/3 text-center md:text-left">
 				<h1 className="md:header2 header3 mb-4 ">
 					Let&apos;s{" "}
@@ -18,7 +69,7 @@ export default function Contact() {
 				</p>
 			</div>
 
-			<form className="w-full space-y-14">
+			<form className="w-full space-y-14" onSubmit={submitHandler}>
 				<div className="flex flex-col justify-between gap-5 lg:flex-row ">
 					<div className="w-full">
 						<label htmlFor="name" className="">
@@ -83,6 +134,10 @@ export default function Contact() {
 						placeholder="What you want to discuss"
 						required
 					/>
+				</div>
+
+				<div>
+					<Button>Send</Button>
 				</div>
 			</form>
 		</div>
