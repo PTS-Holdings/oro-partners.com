@@ -54,7 +54,7 @@ export default function Contact() {
 	};
 
 	return (
-		<div className="container flex flex-col items-center justify-between  gap-16 md:flex-row ">
+		<div className="container flex flex-col items-center justify-between  gap-16 pb-20 md:flex-row">
 			<Head>
 				<title>Contact Us - ORO Partners</title>
 			</Head>
