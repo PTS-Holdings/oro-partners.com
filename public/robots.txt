@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://oro-partners.com
+
+# Sitemaps
+Sitemap: https://oro-partners.com/sitemap.xml
