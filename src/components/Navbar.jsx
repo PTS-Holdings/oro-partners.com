@@ -22,7 +22,7 @@ export default function Navbar() {
     let navItems = [
         { name: "About us", link: "/about" },
         { name: "Approach", link: "/approach" },
-        { name: "Blog", link: "/blog" },
+        // { name: "Blog", link: "/blog" },
     ]
 
     return (

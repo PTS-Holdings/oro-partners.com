@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../Button";
 
 export default function CTABottomSection() {
@@ -6,8 +7,10 @@ export default function CTABottomSection() {
         <p className="md:body-medium-regular body-small-regular md:w-1/2">
             ORO partner team aligns closely with entrepreneurs as a funding partner, a reliable mentor, and a valuable resource to build successful businesses.
         </p>
-        <Button>
-            Get in Touch
-        </Button>
+        <Link href={"/contact"}>
+            <Button>
+                Get in Touch
+            </Button>
+        </Link>
     </section>
 }

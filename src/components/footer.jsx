@@ -40,38 +40,26 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/blog"}>
-                            Blog
-                        </Link>
-                    </li>
-                    <li>
                         <Link href={"/contact"}>
                             Contact Us
                         </Link>
                     </li>
                 </ul>
                 <ul className="space-y-3">
+
                     <li>
-                        <Link href={"/contact"}>
-                            Facebook
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/contact"}>
-                            Twitter
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"/contact"}>
+                        <Link href={"https://www.linkedin.com/company/oropartners/"}>
                             Linkedin
                         </Link>
                     </li>
                 </ul>
 
                 <div className="self-center">
-                    <Button>
-                        Get in Touch
-                    </Button>
+                    <Link href={"/contact"}>
+                        <Button>
+                            Get in Touch
+                        </Button>
+                    </Link>
                 </div>
 
             </div>
