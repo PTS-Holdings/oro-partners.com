@@ -57,6 +57,10 @@ export default function Contact() {
 		<div className="container flex flex-col items-center justify-between  gap-16 pb-20 md:flex-row">
 			<Head>
 				<title>Contact Us - ORO Partners</title>
+				<meta
+					name="description"
+					content="Contact us to join our angel investment network for tech-disruptive innovations in MEA. We connect and support business angels, early stage investors, entrepreneurs and corporates"
+				/>
 			</Head>
 
 			<div className="w-2/3 text-center md:text-left">

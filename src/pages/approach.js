@@ -7,6 +7,10 @@ export default function Approach() {
 		<div className="container divide-y-2 divide-dashed divide-custom-black">
 			<Head>
 				<title>Approach - ORO Partners </title>
+				<meta
+					name="description"
+					content="Our strategy is centered on early-stage startups in the technology and consumer sectors."
+				/>
 			</Head>
 
 			<HeroSection />

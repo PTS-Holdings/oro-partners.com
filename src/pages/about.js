@@ -8,6 +8,10 @@ export default function AboutUs() {
 		<>
 			<Head>
 				<title>About - ORO Partners</title>
+				<meta
+					name="description"
+					content="ORO Partners: angel investment network for tech-disruptive innovations in MEA. Managed by PTS Investments Holdings and COREangels."
+				/>
 			</Head>
 
 			<AboutSection />
