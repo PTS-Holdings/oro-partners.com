@@ -7,7 +7,8 @@
 		"build": "next build",
 		"start": "next start",
 		"postbuild": "next-sitemap",
-		"lint": "next lint"
+		"lint": "next lint",
+		"update-production": "git pull && yarn && yarn build && yarn postbuild && pm2 restart oro-partners.com"
 	},
 	"dependencies": {
 		"@next/eslint-plugin-next": "^13.2.4",
